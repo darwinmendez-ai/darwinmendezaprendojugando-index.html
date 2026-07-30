@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #ffffff;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+h1 {
+  color: #005582;
+  
+}
+h2 {
+  color: #ffffff;
+  text-align: left;
+}
+h3 {
+  color: #005582;
+}
+p {
+  color: #005582;
+}
+nav {
+  display: flex;
+  gap: 15px;
+  background-color: #005582;
+  padding: 10px;
+  font-weight: bold;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0055aa;
+}
+
+/* Submenú "Cuento" */
+.menu-cuento {
+  position: relative;
+}
+
+.menu-cuento > a {
+  cursor: pointer;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  padding: 5px 0;
+  z-index: 1;
+  min-width: 180px;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  background-color: #eee;
+}
+
+.menu-cuento:hover .submenu {
+  display: block;
+}
